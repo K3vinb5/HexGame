@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu">
+   <children>
+       <GridPane layoutX="9.0" layoutY="28.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="343.0" prefWidth="582.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="180.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="220.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="178.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="90.4" minHeight="10.0" prefHeight="89.4" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="90.4" minHeight="10.0" prefHeight="89.4" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="97.4" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="newGamebtn" layoutX="73.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#newGame" text="New Game" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutX="72.0" layoutY="31.0" mnemonicParsing="false" onMouseClicked="#quit" text="Quit" />
+               </children></Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="loadbtn" layoutX="90.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#load" text="Load Game" />
+                  <ChoiceBox fx:id="saveschoicebox" layoutX="15.0" layoutY="27.0" prefWidth="150.0" styleClass="choicebox" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Polygon layoutX="85.0" layoutY="45.0" points="50, 0, 25, 43.301270189221932338186158537646809173570131345259515701395174485, -25, 43.301270189221932338186158537646809173570131345259515701395174485, -50, 0, -50, 0, -25, -43.301270189221932338186158537646809173570131345259515701395174485, 25, -43.301270189221932338186158537646809173570131345259515701395174485" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Polygon>
+                  <Polygon layoutX="85.0" layoutY="45.0" points="25, 0, 12.5, 21.650635094610966169093079268823404586785065672629757850697587243, -12.5, 21.650635094610966169093079268823404586785065672629757850697587243, -25, 0, -25, 0, -12.5, -21.650635094610966169093079268823404586785065672629757850697587243, 12.5, -21.650635094610966169093079268823404586785065672629757850697587243" rotate="90.0" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Polygon>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Polygon layoutX="94.0" layoutY="45.0" points="50, 0, 25, 43.301270189221932338186158537646809173570131345259515701395174485, -25, 43.301270189221932338186158537646809173570131345259515701395174485, -50, 0, -50, 0, -25, -43.301270189221932338186158537646809173570131345259515701395174485, 25, -43.301270189221932338186158537646809173570131345259515701395174485" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Polygon>
+                  <Polygon layoutX="94.0" layoutY="45.0" points="25, 0, 12.5, 21.650635094610966169093079268823404586785065672629757850697587243, -12.5, 21.650635094610966169093079268823404586785065672629757850697587243, -25, 0, -25, 0, -12.5, -21.650635094610966169093079268823404586785065672629757850697587243, 12.5, -21.650635094610966169093079268823404586785065672629757850697587243" rotate="90.0" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Polygon>
+               </children>
+            </Pane>
+            <Label prefHeight="43.0" prefWidth="201.0" text="Hex Game" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

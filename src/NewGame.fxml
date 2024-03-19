@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewGame">
+   <BorderPane prefHeight="389.0" prefWidth="594.0">
+      <top>
+         <GridPane prefHeight="53.0" prefWidth="187.0" BorderPane.alignment="CENTER">
+           <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="389.60000762939455" minWidth="10.0" prefWidth="275.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="82.0" prefWidth="188.0">
+                  <children>
+                     <Label layoutX="183.0" layoutY="21.0" text="New Game">
+                        <font>
+                           <Font name="Britannic Bold" size="40.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </Pane>
+            </children>
+         </GridPane>
+      </top>
+      <center>
+         <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="227.0" prefWidth="511.0" BorderPane.alignment="CENTER">
+           <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="0.0" prefWidth="1.430511474609375E-6" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="444.9999985694885" minWidth="10.0" prefWidth="396.8" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.60000000000002" minWidth="10.0" prefWidth="191.60000000000002" />
+           </columnConstraints>
+           <rowConstraints>
+               <RowConstraints maxHeight="192.40001525878907" minHeight="10.0" prefHeight="51.8" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="254.80000190734864" minHeight="10.0" prefHeight="165.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="139.39998474121094" minHeight="10.0" prefHeight="121.80000000000001" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <Pane prefHeight="161.0" prefWidth="395.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <children>
+                     <Label layoutX="26.0" layoutY="14.0" text="Who plays first?">
+                        <font>
+                           <Font name="Times New Roman" size="14.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="38.0" layoutY="56.0" text="Choose Color:">
+                        <font>
+                           <Font name="Times New Roman" size="14.0" />
+                        </font>
+                     </Label>
+                     <Label layoutY="96.0" text="Computer Difficulty:">
+                        <font>
+                           <Font name="Times New Roman" size="14.0" />
+                        </font>
+                     </Label>
+                     <RadioButton fx:id="blueColorrbtn" layoutX="207.0" layoutY="55.0" mnemonicParsing="false" text="Blue">
+                        <toggleGroup>
+                           <ToggleGroup fx:id="colorPlayer" />
+                        </toggleGroup></RadioButton>
+                     <RadioButton fx:id="redColorrbtn" layoutX="137.0" layoutY="55.0" mnemonicParsing="false" selected="true" text="Red" toggleGroup="$colorPlayer" />
+                     <RadioButton fx:id="playerrbtn" layoutX="137.0" layoutY="13.0" mnemonicParsing="false" selected="true" text="Player">
+                        <toggleGroup>
+                           <ToggleGroup fx:id="playerFirst" />
+                        </toggleGroup></RadioButton>
+                     <RadioButton fx:id="computerrbtn" layoutX="207.0" layoutY="13.0" mnemonicParsing="false" text="Computer" toggleGroup="$playerFirst" />
+                     <RadioButton layoutX="136.0" layoutY="95.0" mnemonicParsing="false" selected="true" text="Easy">
+                        <toggleGroup>
+                           <ToggleGroup fx:id="compMode" />
+                        </toggleGroup></RadioButton>
+                     <RadioButton fx:id="normalDiffrbtn" layoutX="207.0" layoutY="95.0" mnemonicParsing="false" text="Normal" toggleGroup="$compMode" />
+                  </children>
+               </Pane>
+               <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <children>
+                     <Button fx:id="cancelbtn" layoutX="67.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="26.0" prefWidth="61.0" text="Cancel" />
+                  </children>
+               </Pane>
+               <Pane prefHeight="104.0" prefWidth="238.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <children>
+                     <Button fx:id="startNewGamebtn" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#startNewGame" prefHeight="26.0" prefWidth="103.0" text="Start New Game" />
+                  </children>
+               </Pane>
+            </children>
+         </GridPane>
+      </center>
+   </BorderPane>
+
+</AnchorPane>
